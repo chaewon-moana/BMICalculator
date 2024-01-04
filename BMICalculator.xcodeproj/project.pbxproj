@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE44703E2B46C0AF00334E01 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE44703D2B46C0AF00334E01 /* IQKeyboardManagerSwift */; };
 		DE4BD9292B4556BB00147CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4BD9282B4556BB00147CC3 /* AppDelegate.swift */; };
 		DE4BD92B2B4556BB00147CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4BD92A2B4556BB00147CC3 /* SceneDelegate.swift */; };
 		DE4BD92D2B4556BB00147CC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4BD92C2B4556BB00147CC3 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE44703E2B46C0AF00334E01 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = BMICalculator;
+			packageProductDependencies = (
+				DE44703D2B46C0AF00334E01 /* IQKeyboardManagerSwift */,
+			);
 			productName = BMICalculator;
 			productReference = DE4BD9252B4556BB00147CC3 /* BMICalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = DE4BD91C2B4556BB00147CC3;
+			packageReferences = (
+				DE44703C2B46C0AF00334E01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = DE4BD9262B4556BB00147CC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE44703C2B46C0AF00334E01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.16;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE44703D2B46C0AF00334E01 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE44703C2B46C0AF00334E01 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE4BD91D2B4556BB00147CC3 /* Project object */;
 }
